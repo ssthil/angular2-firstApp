@@ -1,4 +1,4 @@
-System.register(["@angular/core", "app/familymembers/members.component"], function(exports_1, context_1) {
+System.register(["@angular/core", "app/familymembers/members.component", "app/senthilfamily/senthilfamily.component"], function(exports_1, context_1) {
     "use strict";
     var __moduleName = context_1 && context_1.id;
     var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -10,7 +10,7 @@ System.register(["@angular/core", "app/familymembers/members.component"], functi
     var __metadata = (this && this.__metadata) || function (k, v) {
         if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
     };
-    var core_1, members_component_1;
+    var core_1, members_component_1, senthilfamily_component_1;
     var AppComponent;
     return {
         setters:[
@@ -19,17 +19,20 @@ System.register(["@angular/core", "app/familymembers/members.component"], functi
             },
             function (members_component_1_1) {
                 members_component_1 = members_component_1_1;
+            },
+            function (senthilfamily_component_1_1) {
+                senthilfamily_component_1 = senthilfamily_component_1_1;
             }],
         execute: function() {
             AppComponent = (function () {
                 function AppComponent() {
-                    this.name = "My Firts Angular 2";
+                    this.name = "My First Angular 2";
                 }
                 AppComponent = __decorate([
                     core_1.Component({
                         selector: 'main-app',
                         templateUrl: 'app/app.component.html',
-                        directives: [members_component_1.FamilyMembersComponent]
+                        directives: [members_component_1.FamilyMembersComponent, senthilfamily_component_1.SenthilFamilyMembersComponent]
                     }), 
                     __metadata('design:paramtypes', [])
                 ], AppComponent);

@@ -1,4 +1,4 @@
-System.register(["@angular/core", "app/familymembers/members.service"], function(exports_1, context_1) {
+System.register(["@angular/core", "app/senthilfamily/senthilfamily.service"], function(exports_1, context_1) {
     "use strict";
     var __moduleName = context_1 && context_1.id;
     var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -10,37 +10,37 @@ System.register(["@angular/core", "app/familymembers/members.service"], function
     var __metadata = (this && this.__metadata) || function (k, v) {
         if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
     };
-    var core_1, members_service_1;
-    var FamilyMembersComponent;
+    var core_1, senthilfamily_service_1;
+    var SenthilFamilyMembersComponent;
     return {
         setters:[
             function (core_1_1) {
                 core_1 = core_1_1;
             },
-            function (members_service_1_1) {
-                members_service_1 = members_service_1_1;
+            function (senthilfamily_service_1_1) {
+                senthilfamily_service_1 = senthilfamily_service_1_1;
             }],
         execute: function() {
-            FamilyMembersComponent = (function () {
-                function FamilyMembersComponent(_familyMembersService) {
+            SenthilFamilyMembersComponent = (function () {
+                function SenthilFamilyMembersComponent(_senthilFamilyMemberService) {
                     this.family = "'s family members details";
-                    this.name = "Sivaramakrishan";
-                    this.members = _familyMembersService.getMembers();
+                    this.name = "Senthil";
+                    this.members = _senthilFamilyMemberService.getMembers();
                 }
-                FamilyMembersComponent = __decorate([
+                SenthilFamilyMembersComponent = __decorate([
                     core_1.Component({
-                        selector: "family-members",
-                        templateUrl: "app/familymembers/members.component.html",
-                        providers: [members_service_1.FamilyMembersService],
+                        selector: "senthil-members",
+                        templateUrl: "app/senthilfamily/senthilfamily.component.html",
+                        providers: [senthilfamily_service_1.SenthilFamilyMemberService],
                         styles: ["\n    .panel-body > .panel{\n      width: 32%;\n      float: left;\n      margin: 5px;\n    }\n    "]
                     }), 
-                    __metadata('design:paramtypes', [(typeof (_a = typeof members_service_1.FamilyMembersService !== 'undefined' && members_service_1.FamilyMembersService) === 'function' && _a) || Object])
-                ], FamilyMembersComponent);
-                return FamilyMembersComponent;
+                    __metadata('design:paramtypes', [(typeof (_a = typeof senthilfamily_service_1.SenthilFamilyMemberService !== 'undefined' && senthilfamily_service_1.SenthilFamilyMemberService) === 'function' && _a) || Object])
+                ], SenthilFamilyMembersComponent);
+                return SenthilFamilyMembersComponent;
                 var _a;
             }());
-            exports_1("FamilyMembersComponent", FamilyMembersComponent);
+            exports_1("SenthilFamilyMembersComponent", SenthilFamilyMembersComponent);
         }
     }
 });
-//# sourceMappingURL=members.component.js.map
+//# sourceMappingURL=senthilfamily.component.js.map

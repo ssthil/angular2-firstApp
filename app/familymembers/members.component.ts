@@ -1,29 +1,34 @@
 import { Component } from "@angular/core";
+// members service
+import { FamilyMembersService } from "app/familymembers/members.service";
 
 @Component({
     selector:"family-members",
-    template: `
-        <div class="panel panel-info" *ngFor="let member of members">
-            <div class="panel-heading">
-                {{member.title}}
-            </div>
-            <div class="panel-body">
-               <p>{{member.name}}</p>
-               <p>Age: {{member.age}}</p>
-            </div>
-        </div>
-    `
+    templateUrl:"app/familymembers/members.component.html",
+    providers: [FamilyMembersService],
+    styles:[`
+    .panel-body > .panel{
+      width: 32%;
+      float: left;
+      margin: 5px;
+    }
+    `]
 })
 
 export class FamilyMembersComponent { 
-    public title: string = "Father";
+    public family: string = "'s family members details";
     public name: string = "Sivaramakrishan";
+    
+    constructor (_familyMembersService: FamilyMembersService) {
+        this.members = _familyMembersService.getMembers();
+    }
 
-    members = [
-        {title: "Father", name: "Sivaramakrishan", age:63},
-        {title: "Mother", name: "Jayarani", age: 58},
-        {title: "Son 1", name: "Rajakumar", age: 37},
-        {title: "Son 2", name: "Senthil", age: 34},
-        {title: "Daughter", name: "Maithili", age: 32}
-    ]
+    // members = [
+    //     {title: "Father", name: "Sivaramakrishan", age:63},
+    //     {title: "Mother", name: "Jayarani", age: 58},
+    //     {title: "Son 1", name: "Rajakumar", age: 37},
+    //     {title: "Son 2", name: "Senthil", age: 34},
+    //     {title: "Daughter", name: "Maithili", age: 32}
+    // ]
+
 }
