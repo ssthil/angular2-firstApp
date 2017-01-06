@@ -18,6 +18,7 @@ import { SenthilFamilyMemberService } from "app/senthilfamily/senthilfamily.serv
 export class SenthilFamilyMembersComponent {
     public family: string = "'s family members details";
     public name: string = "Senthil";
+    members: Array<any>;
 
     constructor (_senthilFamilyMemberService : SenthilFamilyMemberService) {
         this.members = _senthilFamilyMemberService.getMembers();

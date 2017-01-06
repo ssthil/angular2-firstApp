@@ -9,8 +9,8 @@ export class FamilyMembersService {
         this.members = [
             { title: "Father", name: "Sivaramakrishan", age: 63 },
             { title: "Mother", name: "Jayarani", age: 58 },
-            { title: "Son 1", name: "Rajakumar", age: 37 },
-            { title: "Son 2", name: "Senthil", age: 34 },
+            { title: "1st Son", name: "Rajkumar", age: 37 },
+            { title: "2nd Son", name: "Senthil", age: 34 },
             { title: "Daughter", name: "Maithili", age: 32 }
         ]
     }

@@ -18,6 +18,7 @@ import { FamilyMembersService } from "app/familymembers/members.service";
 export class FamilyMembersComponent { 
     public family: string = "'s family members details";
     public name: string = "Sivaramakrishan";
+    members: Array<any>;
     
     constructor (_familyMembersService: FamilyMembersService) {
         this.members = _familyMembersService.getMembers();

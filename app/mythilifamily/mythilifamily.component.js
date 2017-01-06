@@ -11,28 +11,36 @@ System.register(["@angular/core"], function(exports_1, context_1) {
         if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
     };
     var core_1;
-    var AppComponent;
+    var MythiliFamilyMembersComponent;
     return {
         setters:[
             function (core_1_1) {
                 core_1 = core_1_1;
             }],
         execute: function() {
-            AppComponent = (function () {
-                function AppComponent() {
-                    this.name = "my first Angular 2 web application";
+            MythiliFamilyMembersComponent = (function () {
+                function MythiliFamilyMembersComponent() {
+                    this.family = "";
+                    this.name = "Mythili";
+                    //constructor () {
+                    this.members = [
+                        { title: "Father", name: "Marthandan", age: 30 },
+                        { title: "Mother", name: "Mythili", age: 32 },
+                        { title: "Son", name: "Mathees", age: 2 }
+                    ];
                 }
-                AppComponent = __decorate([
+                MythiliFamilyMembersComponent = __decorate([
                     core_1.Component({
-                        selector: 'main-app',
-                        templateUrl: 'app/app.component.html'
+                        selector: "mythili-members",
+                        templateUrl: "app/mythilifamily/mythilifamily.component.html",
+                        styles: ["\n    .panel-body > .panel{\n      width: 32%;\n      float: left;\n      margin: 5px;\n    }\n    "]
                     }), 
                     __metadata('design:paramtypes', [])
-                ], AppComponent);
-                return AppComponent;
+                ], MythiliFamilyMembersComponent);
+                return MythiliFamilyMembersComponent;
             }());
-            exports_1("AppComponent", AppComponent);
+            exports_1("MythiliFamilyMembersComponent", MythiliFamilyMembersComponent);
         }
     }
 });
-//# sourceMappingURL=app.component.js.map
+//# sourceMappingURL=mythilifamily.component.js.map
