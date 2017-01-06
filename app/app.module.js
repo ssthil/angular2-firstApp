@@ -38,7 +38,9 @@ System.register(["@angular/core", "@angular/platform-browser", "./app.component"
                 }
                 AppModule = __decorate([
                     core_1.NgModule({
+                        //modules
                         imports: [platform_browser_1.BrowserModule],
+                        // directives, components, and pipes
                         declarations: [
                             app_component_1.AppComponent,
                             members_component_1.FamilyMembersComponent,

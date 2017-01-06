@@ -8,7 +8,9 @@ import { SenthilFamilyMembersComponent } from "./senthilfamily/senthilfamily.com
 import { MythiliFamilyMembersComponent } from "./mythilifamily/mythilifamily.component";
 
 @NgModule({
+    //modules
     imports: [BrowserModule],
+    // directives, components, and pipes
     declarations: [
         AppComponent,
         FamilyMembersComponent,

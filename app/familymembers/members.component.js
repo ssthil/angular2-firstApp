@@ -32,7 +32,7 @@ System.register(["@angular/core", "app/familymembers/members.service"], function
                         selector: "family-members",
                         templateUrl: "app/familymembers/members.component.html",
                         providers: [members_service_1.FamilyMembersService],
-                        styles: ["\n    .panel-body > .panel{\n      width: 32%;\n      float: left;\n      margin: 5px;\n    }\n    "]
+                        styles: ["\n    .panel-body > .panel{\n      width: 32%; \n      float: left;\n      margin: 5px;\n    }\n    "]
                     }), 
                     __metadata('design:paramtypes', [(typeof (_a = typeof members_service_1.FamilyMembersService !== 'undefined' && members_service_1.FamilyMembersService) === 'function' && _a) || Object])
                 ], FamilyMembersComponent);

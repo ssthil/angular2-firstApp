@@ -8,7 +8,7 @@ import { FamilyMembersService } from "app/familymembers/members.service";
     providers: [FamilyMembersService],
     styles:[`
     .panel-body > .panel{
-      width: 32%;
+      width: 32%; 
       float: left;
       margin: 5px;
     }
