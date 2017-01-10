@@ -23,9 +23,11 @@ System.register(["@angular/core", "app/familymembers/members.service"], function
         execute: function() {
             FamilyMembersComponent = (function () {
                 function FamilyMembersComponent(_familyMembersService) {
+                    var _this = this;
+                    this._familyMembersService = _familyMembersService;
                     this.family = "'s family members details";
                     this.name = "Sivaramakrishan";
-                    this.members = _familyMembersService.getMembers();
+                    this._familyMembersService.getMembers().subscribe(function (res) { return _this.members = res.sivaramakrishnansfamily; });
                 }
                 FamilyMembersComponent = __decorate([
                     core_1.Component({

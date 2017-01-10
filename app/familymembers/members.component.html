@@ -3,14 +3,23 @@
         <h4>{{name}}{{family}}</h4>
     </div>
     <div class="panel-body">
-        <div class="panel panel-info" *ngFor="let member of members">
-            <div class="panel-heading">
-                {{member.title}}
-            </div>
-            <div class="panel-body">
-                <p>{{member.name}}</p>
-                <p>Age: {{member.age}}</p>
-            </div>
+        <div class="table-responsive">
+            <table class="table table-bordered table-striped">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Relation</th>
+                        <th>Age</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let member of members">
+                        <td>{{member.name}}</td>
+                        <td>{{member.title}}</td>
+                        <td>{{member.age}}</td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
     </div>
 </div>

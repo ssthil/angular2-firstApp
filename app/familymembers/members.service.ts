@@ -1,21 +1,18 @@
 import { Injectable } from "@angular/core";
+import { Http, Response } from "@angular/http";
+import 'rxjs/add/operator/map';
+
 
 @Injectable()
 
 export class FamilyMembersService {
-    members: Array<any>;
 
-    constructor() {
-        this.members = [
-            { title: "Father", name: "Sivaramakrishan", age: 63 },
-            { title: "Mother", name: "Jayarani", age: 58 },
-            { title: "1st Son", name: "Rajkumar", age: 37 },
-            { title: "2nd Son", name: "Senthil", age: 34 },
-            { title: "Daughter", name: "Maithili", age: 32 }
-        ]
-    }
+    //data: any;
+    constructor(private _http:Http) { }
 
-    getMembers () {
-        return this.members;
+    getMembers () {  
+        return this._http.get("http://localhost:3000/app/data/data.json")
+        .map((response: Response) => response.json()); 
+        
     }
 }

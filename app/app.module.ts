@@ -1,4 +1,5 @@
 import { NgModule } from "@angular/core";
+import { Http, HttpModule } from "@angular/http"; 
 import { BrowserModule } from "@angular/platform-browser";
 
 import { AppComponent } from "./app.component";
@@ -9,7 +10,7 @@ import { MythiliFamilyMembersComponent } from "./mythilifamily/mythilifamily.com
 
 @NgModule({
     //modules
-    imports: [BrowserModule],
+    imports: [BrowserModule, HttpModule],
     // directives, components, and pipes
     declarations: [
         AppComponent,

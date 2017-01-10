@@ -23,14 +23,11 @@ System.register(["@angular/core", "app/mythilifamily/mythilifamily.service"], fu
         execute: function() {
             MythiliFamilyMembersComponent = (function () {
                 function MythiliFamilyMembersComponent(_mythiliFamilyMembersService) {
+                    var _this = this;
+                    this._mythiliFamilyMembersService = _mythiliFamilyMembersService;
                     this.family = "'s family members details";
                     this.name = "Mythili";
-                    this.members = _mythiliFamilyMembersService.getMembers();
-                    /*members = [
-                        {title: "Father", name: "Marthandan", age:30},
-                        {title: "Mother", name: "Mythili", age:32},
-                        {title: "Son", name: "Mathees", age:2}
-                    ]*/
+                    this._mythiliFamilyMembersService.getMembers().subscribe(function (response) { return _this.members = response.mythilisfamily; });
                 }
                 MythiliFamilyMembersComponent = __decorate([
                     core_1.Component({

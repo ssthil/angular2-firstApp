@@ -21,13 +21,7 @@ export class MythiliFamilyMembersComponent {
 
     members:Array<any>;
 
-    constructor (_mythiliFamilyMembersService: MythiliFamilyMembersService) {
-
-        this.members = _mythiliFamilyMembersService.getMembers();
-        /*members = [
-            {title: "Father", name: "Marthandan", age:30},
-            {title: "Mother", name: "Mythili", age:32},
-            {title: "Son", name: "Mathees", age:2}
-        ]*/
+    constructor (private _mythiliFamilyMembersService: MythiliFamilyMembersService) {
+        this._mythiliFamilyMembersService.getMembers().subscribe(response => this.members = response.mythilisfamily);
     }
 }

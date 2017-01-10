@@ -1,4 +1,4 @@
-System.register(["@angular/core", "@angular/platform-browser", "./app.component", "./familymembers/members.component", "./senthilfamily/senthilfamily.component", "./mythilifamily/mythilifamily.component"], function(exports_1, context_1) {
+System.register(["@angular/core", "@angular/http", "@angular/platform-browser", "./app.component", "./familymembers/members.component", "./senthilfamily/senthilfamily.component", "./mythilifamily/mythilifamily.component"], function(exports_1, context_1) {
     "use strict";
     var __moduleName = context_1 && context_1.id;
     var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -10,12 +10,15 @@ System.register(["@angular/core", "@angular/platform-browser", "./app.component"
     var __metadata = (this && this.__metadata) || function (k, v) {
         if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
     };
-    var core_1, platform_browser_1, app_component_1, members_component_1, senthilfamily_component_1, mythilifamily_component_1;
+    var core_1, http_1, platform_browser_1, app_component_1, members_component_1, senthilfamily_component_1, mythilifamily_component_1;
     var AppModule;
     return {
         setters:[
             function (core_1_1) {
                 core_1 = core_1_1;
+            },
+            function (http_1_1) {
+                http_1 = http_1_1;
             },
             function (platform_browser_1_1) {
                 platform_browser_1 = platform_browser_1_1;
@@ -39,7 +42,7 @@ System.register(["@angular/core", "@angular/platform-browser", "./app.component"
                 AppModule = __decorate([
                     core_1.NgModule({
                         //modules
-                        imports: [platform_browser_1.BrowserModule],
+                        imports: [platform_browser_1.BrowserModule, http_1.HttpModule],
                         // directives, components, and pipes
                         declarations: [
                             app_component_1.AppComponent,

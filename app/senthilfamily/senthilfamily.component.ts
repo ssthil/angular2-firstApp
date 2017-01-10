@@ -20,7 +20,8 @@ export class SenthilFamilyMembersComponent {
     public name: string = "Senthil";
     members: Array<any>;
 
-    constructor (_senthilFamilyMemberService : SenthilFamilyMemberService) {
-        this.members = _senthilFamilyMemberService.getMembers();
+    constructor (private _senthilFamilyMemberService : SenthilFamilyMemberService) {
+        this._senthilFamilyMemberService.getMembers().subscribe(data=>this.members = data.senthilsfamily);
     }
+    
 }
