@@ -13,6 +13,9 @@ import { FamilyMembersService } from "app/familymembers/members.service";
       float: left;
       margin: 5px;
     }
+    .table{
+        margin-bottom:0
+    }
     `]
 })
 

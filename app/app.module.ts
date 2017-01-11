@@ -7,6 +7,7 @@ import { AppComponent } from "./app.component";
 import { FamilyMembersComponent } from "./familymembers/members.component";
 import { SenthilFamilyMembersComponent } from "./senthilfamily/senthilfamily.component";
 import { MythiliFamilyMembersComponent } from "./mythilifamily/mythilifamily.component";
+import { IlangoFamilyMembersComponent } from "./ilangofamily/ilangofamily.component";
 
 @NgModule({
     //modules
@@ -16,7 +17,8 @@ import { MythiliFamilyMembersComponent } from "./mythilifamily/mythilifamily.com
         AppComponent,
         FamilyMembersComponent,
         SenthilFamilyMembersComponent,
-        MythiliFamilyMembersComponent
+        MythiliFamilyMembersComponent,
+        IlangoFamilyMembersComponent
     ],
     bootstrap: [AppComponent]
 })
