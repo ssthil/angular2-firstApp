@@ -13,4 +13,4 @@ Created 3 child components inside the app components
 > `data.json` from github repository
 
 ### Demo
-`http://angular2-ssthilapp.azurewebsites.net/`
+[http://angular2-ssthilapp.azurewebsites.net/]
