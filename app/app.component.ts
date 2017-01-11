@@ -2,9 +2,10 @@ import { Component } from "@angular/core";
 
 @Component ({
     selector:'main-app',
-    templateUrl: 'app/app.component.html' 
+    templateUrl: 'app/app.component.html',
+    styleUrls:['app/app.component.css']
 })
 
 export class AppComponent {
-    public name: string = `my first Angular 2 web application`;
+    public name: string = `My First Angular 2 Demo`;
 }
