@@ -1,0 +1,5 @@
+.panel-body > .panel{
+    width: 32%;
+    float: left;
+    margin: 5px;
+}

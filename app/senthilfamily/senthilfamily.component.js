@@ -34,7 +34,7 @@ System.register(["@angular/core", "app/senthilfamily/senthilfamily.service"], fu
                         selector: "senthil-members",
                         templateUrl: "app/senthilfamily/senthilfamily.component.html",
                         providers: [senthilfamily_service_1.SenthilFamilyMemberService],
-                        styles: ["\n    .panel-body > .panel{\n      width: 32%;\n      float: left;\n      margin: 5px;\n    }\n    "]
+                        styleUrls: ['app/senthilfamily/senthilfamily.component.css']
                     }), 
                     __metadata('design:paramtypes', [(typeof (_a = typeof senthilfamily_service_1.SenthilFamilyMemberService !== 'undefined' && senthilfamily_service_1.SenthilFamilyMemberService) === 'function' && _a) || Object])
                 ], SenthilFamilyMembersComponent);

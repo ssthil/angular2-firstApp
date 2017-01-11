@@ -6,13 +6,7 @@ import { SenthilFamilyMemberService } from "app/senthilfamily/senthilfamily.serv
     selector: "senthil-members",
     templateUrl: "app/senthilfamily/senthilfamily.component.html",
     providers: [SenthilFamilyMemberService],
-    styles:[`
-    .panel-body > .panel{
-      width: 32%;
-      float: left;
-      margin: 5px;
-    }
-    `]
+    styleUrls:['app/senthilfamily/senthilfamily.component.css']
 })
 
 export class SenthilFamilyMembersComponent {
