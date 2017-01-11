@@ -21,7 +21,7 @@ System.register(["@angular/core"], function(exports_1, context_1) {
             AppComponent = (function () {
                 function AppComponent() {
                     this.name = "My First Angular 2 Demo";
-                    this.description = "Here the deatils of my family member's name, age and relationship";
+                    this.description = "Here the details of my family member's name, age and relationship";
                 }
                 AppComponent = __decorate([
                     core_1.Component({

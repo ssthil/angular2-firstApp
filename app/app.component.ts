@@ -8,5 +8,5 @@ import { Component } from "@angular/core";
 
 export class AppComponent {
     public name: string = `My First Angular 2 Demo`;
-    public description: string = "Here the deatils of my family member's name, age and relationship"; 
+    public description: string = "Here the details of my family member's name, age and relationship"; 
 }
