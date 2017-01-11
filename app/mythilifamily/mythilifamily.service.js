@@ -27,7 +27,8 @@ System.register(["@angular/core", "@angular/http", 'rxjs/add/operator/map'], fun
                     this._http = _http;
                 }
                 MythiliFamilyMembersService.prototype.getMembers = function () {
-                    return this._http.get("http://localhost:3000/app/data/data.json").map(function (data) { return data.json(); });
+                    return this._http.get("https://raw.githubusercontent.com/ssthil/angular2-firstapp/master/app/data/data.json")
+                        .map(function (data) { return data.json(); });
                 };
                 MythiliFamilyMembersService = __decorate([
                     core_1.Injectable(), 
