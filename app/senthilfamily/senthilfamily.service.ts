@@ -4,7 +4,7 @@ import 'rxjs/add/operator/map';
 
 @Injectable()
 
-export class SenthilFamilyMemberService {
+export class SenthilFamilyMemberService { 
     members: Array<any>;
 
     constructor (public _http: Http) { }
