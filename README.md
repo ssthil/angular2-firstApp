@@ -4,10 +4,10 @@ This is my first angular2 single page application
 Created 3 child components inside the app components
 
 ### Components list
--SivaramakrishnanFamily
--SenthilFamily
--Mythilifamily
--IlangoFamily
+* SivaramakrishnanFamily
+* SenthilFamily
+* Mythilifamily
+* IlangoFamily
 
 ### Data Reference
 > `data.json` from github repository
