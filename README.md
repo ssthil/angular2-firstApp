@@ -13,4 +13,4 @@ Created 4 child components inside the app components
 > `data.json` from github repository
 
 ### Demo link
-[http://angular2-ssthilapp.azurewebsites.net/]
+https://angular2-firstapp.herokuapp.com
